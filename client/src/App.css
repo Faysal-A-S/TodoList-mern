@@ -1,0 +1,30 @@
+.homebox {
+  background-color: white;
+  height: 60vh;
+  width: 400px;
+
+  max-height: 100vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.form-floating {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: calc(35%);
+  left: 1.25rem;
+}
+.icon-click {
+  position: absolute;
+  top: calc(55%);
+  left: 1.25rem;
+}
+
+.form-floating label,
+.form-floating .form-control {
+  left: 0.5rem !important;
+  padding-left: 3rem !important;
+  padding-top: 2rem;
+}
