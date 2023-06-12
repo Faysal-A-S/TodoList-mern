@@ -14,7 +14,7 @@ const Login = () => {
   const [login, { data, isLoading, error }] = useLoginMutation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  console.log(data);
+
   useEffect(() => {
     if (error?.data) {
       setError(error.data.message);
@@ -22,7 +22,7 @@ const Login = () => {
     if (data?.Token && data?.email) {
       localStorage.setItem("user", JSON.stringify({ ...data }));
       dispatch(authenticatedUser({ ...data }));
-      navigate("/todo");
+      navigate("/");
     }
   }, [data, dispatch, navigate, error]);
 

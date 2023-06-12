@@ -28,7 +28,7 @@ const Register = () => {
     if (data?.Token && data?.email) {
       localStorage.setItem("user", JSON.stringify({ ...data }));
       dispatch(authenticatedUser({ ...data }));
-      navigate("/todo");
+      navigate("/");
     }
   }, [error, data, dispatch, navigate]);
   return (

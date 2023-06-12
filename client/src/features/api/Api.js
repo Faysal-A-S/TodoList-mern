@@ -6,6 +6,6 @@ export const Api = createApi({
     baseUrl: "http://localhost:9000/",
     headers: { "Content-Type": "application/json" },
   }),
-  tagTypes: [],
+  tagTypes: ["todos"],
   endpoints: (builder) => ({}),
 });

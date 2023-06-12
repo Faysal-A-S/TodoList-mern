@@ -2,14 +2,26 @@
   background-color: white;
   height: 60vh;
   width: 400px;
-
+  overflow: auto;
   max-height: 100vh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-
+.todoBox {
+  background-color: white;
+  height: 80vh;
+  width: 600px;
+  overflow: auto;
+  max-height: 100vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 .form-floating {
   position: relative;
+}
+.active {
+  background-color: black !important;
+  color: white !important;
 }
 .icon {
   position: absolute;
@@ -27,4 +39,22 @@
   left: 0.5rem !important;
   padding-left: 3rem !important;
   padding-top: 2rem;
+}
+.todo {
+  list-style: none;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.edit-form {
+  background-color: transparent !important;
+  padding: 0% !important;
+  color: white !important;
+  font-weight: bold !important;
+  border: none !important;
+  border-bottom: 1px solid white !important;
+  border-radius: 0% !important;
 }
